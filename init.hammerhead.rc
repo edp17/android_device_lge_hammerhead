@@ -43,6 +43,9 @@ on early-boot
     # adsp
     write /sys/kernel/boot_adsp/boot 1
 
+    # qseecomd
+    start vendor.qseecomd
+
 on boot
     # bluetooth
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
